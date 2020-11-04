@@ -38,6 +38,7 @@ const UseWorldEvent = ()=>{
 const worldMap = ()=>{
     return (
             <svg
+            viewBox="0 0 800 400"
    xmlnsDc="http://purl.org/dc/elements/1.1/"
    xmlnsCc="http://creativecommons.org/ns#"
    xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -46,8 +47,8 @@ const worldMap = ()=>{
    xmlns="http://www.w3.org/2000/svg"
    xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="800"
-   height="400"
+//    width="800"
+//    height="400"
    version="1.0"
    id="svg2982"
    inkscapeVersion="0.48.4 r9939"
