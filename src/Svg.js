@@ -1,10 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-
-const mouseOut = ()=>{
-
-}
-
 const UseWorldEvent = ()=>{
     const [style,setStyle] = useState('');
     const target = useRef();
@@ -42,7 +37,6 @@ const UseWorldEvent = ()=>{
 }
 const worldMap = ()=>{
     return (
-        <div>
             <svg
    xmlnsDc="http://purl.org/dc/elements/1.1/"
    xmlnsCc="http://creativecommons.org/ns#"
@@ -52,8 +46,8 @@ const worldMap = ()=>{
    xmlns="http://www.w3.org/2000/svg"
    xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100%"
-   height="800"
+   width="800"
+   height="400"
    version="1.0"
    id="svg2982"
    inkscapeVersion="0.48.4 r9939"
@@ -694,7 +688,6 @@ const worldMap = ()=>{
   </g>
 </svg>
 
-        </div>
     )
 }
 
