@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import {w3cwebsocket} from 'websocket';
+const client = new w3cwebsocket('ws://127.0.0.1:9998');
 const UseWorldEvent = ()=>{
     const [style,setStyle] = useState('');
     const target = useRef();
@@ -17,15 +18,22 @@ const UseWorldEvent = ()=>{
         });
     }
     const mouseClick=()=>{
-        alert(target.current.id);
+        client.send(target.current.id);
     }
     useEffect(()=>{
+       client.onopen = ()=>{
+          console.log('open');
+       }
+       client.onmessage= (msg)=>{
+          console.log(msg);
+       }
         if(target.current){
             target.current.addEventListener('mouseenter',mouseOver);
             target.current.addEventListener('mouseout',mouseOut);
             target.current.addEventListener('click',mouseClick);
         }
             return ()=>{
+               client.close();
             if(target.current){
                 target.current.removeEventListenr('mouseenter',mouseOver);        
                 target.current.removeEventListener('mouseout',mouseOut);     
