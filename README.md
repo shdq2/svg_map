@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This <span style="color:red">red</span> was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-https://placehold.it/150/ffffff/ff0000?text=hello
+
 
 ## Available Scripts
 
