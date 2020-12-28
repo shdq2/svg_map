@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This <span style="color:red">project</span> was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This <span style="color:red">red</span> was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
